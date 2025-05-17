@@ -1,1 +1,12 @@
-
+apiversion: v1
+kind: pod
+metadata:
+  name: mypod
+  labels:
+    app: webpp
+    type: front-end
+spec:
+  name: nginx-container
+  image: nginx
+  
+  
