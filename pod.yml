@@ -6,7 +6,8 @@ metadata:
     app: webpp
     type: front-end
 spec:
-  name: nginx-container
-  image: nginx
+  containers:
+    -   name: nginx-container
+        image: nginx
   
   
