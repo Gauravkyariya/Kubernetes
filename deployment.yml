@@ -1,7 +1,7 @@
 apiVersion: apps/v1
 kind: Deployment
 metadata:
-  name: myreplica
+  name: mydeploy
 spec:
   replicas: 3
   selector:  # pods labels should be defined in replicaset label selector
