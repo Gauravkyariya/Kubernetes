@@ -1,0 +1,21 @@
+apiVersion: apps/v1
+kind: ReplicaSet
+metadata:
+  name: myreplica
+spec:
+  replicas: 3
+  selector:  # pods labels should be defined in replicaset label selector
+    matchLabels:
+      app: webapp
+  template:
+    metadata:
+      name: mypods
+      labels:
+        app: webapp
+        type: front-end
+    spec:
+      containers:
+      - name: my-container
+        image: nginx
+        
+      
